@@ -1,6 +1,7 @@
 import { CiSearch } from "react-icons/ci";
 import { CiFilter } from "react-icons/ci";
 import { IoIosArrowDown } from "react-icons/io";
+import { Link } from "react-router";
 const SearchBar: React.FC = () => {
   return (
     <div className="px-5  py-12">
@@ -13,7 +14,7 @@ const SearchBar: React.FC = () => {
           />
           <CiSearch className="absolute left-3 top-1/2 transform -translate-y-1/2 font-semibold  text-xl text-black" />
         </div>
-        <div>
+        <div className="flex items-center">
           <div className="dropdown dropdown-bottom dropdown-end">
             <div
               tabIndex={0}
@@ -33,6 +34,9 @@ const SearchBar: React.FC = () => {
                 <a>Item 2</a>
               </li>
             </ul>
+          </div>
+          <div>
+            <Link to="/signup">Signup</Link>
           </div>
         </div>
       </div>
